@@ -15,4 +15,4 @@ spec:
             service:
               name: bankati-front
               port:
-                number: 30101
+                number: 80

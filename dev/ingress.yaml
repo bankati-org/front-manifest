@@ -9,7 +9,7 @@ spec:
     - host: bankati.tech
       http:
         paths:
-        - path: /app
+        - path: /
           pathType: Prefix
           backend:
             service:

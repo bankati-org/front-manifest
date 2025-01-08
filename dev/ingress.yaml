@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bankati-front-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: bankati.tech
+      http:
+        paths:
+        - path: /app
+          pathType: Prefix
+          backend:
+            service:
+              name: bankati-front
+              port:
+                number: 30101

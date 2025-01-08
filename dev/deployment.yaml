@@ -17,3 +17,10 @@ spec: # Set the desired state of our deployment
         image: soukaina915/bankati-front:15
         ports:
         - containerPort: 80
+        volumeMounts:
+        - name: app-config
+          mountPath: /usr/share/nginx/html
+      volumes:
+      - name: app-config
+        configMap:
+          name: nginx-config

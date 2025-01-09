@@ -14,7 +14,7 @@ spec: # Set the desired state of our deployment
     spec: # Desired state of the pod
       containers:
       - name: bankati-front
-        image: soukaina915/bankati-front:23
+        image: soukaina915/bankati-front:24
         ports:
         - containerPort: 80
       #   volumeMounts:
